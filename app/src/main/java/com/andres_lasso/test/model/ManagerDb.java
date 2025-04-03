@@ -14,10 +14,9 @@ public class ManagerDb {
     }
 
     //ahora un metodo para insertar datos en una tabla especifica
-    public long insertData(String tabName, int cod, String name) {
+    public long insertData(String tabName, String name) {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("cod", cod);
         values.put("name", name);
 
         //ahora inserto los datos en la tabla

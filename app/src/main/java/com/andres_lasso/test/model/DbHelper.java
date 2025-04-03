@@ -21,6 +21,10 @@ public DbHelper(Context context) {
         db.execSQL(Constants.SENETENCIACIUDAD);
         //esto crea la tabla datos
         db.execSQL(Constants.SENTENCEDATOS);
+        //esto crea la tabla barrios
+        db.execSQL(Constants.SENTENCEBARRIOS);
+        //esto crea la tabla departamento
+        db.execSQL(Constants.SENTENCEDEPARTAMENTO);
     }
 
     //ahora lo que se ejecuta en cada actualizacion de la base de datos
@@ -30,6 +34,11 @@ public DbHelper(Context context) {
         db.execSQL("DROP TABLE IF EXISTS Ciudad");
         //esto elimina la tabla datos si existe
         db.execSQL("DROP TABLE IF EXISTS Datos");
+        //esto elimina la tabla barrios si existe
+        db.execSQL("DROP TABLE IF EXISTS Barrios");
+        //esto elimina la tabla departamento si existe
+        db.execSQL("DROP TABLE IF EXISTS Departamento");
+        //llamo al metodo onCreate para crear las tablas nuevamente
         onCreate(db);
     }
 }

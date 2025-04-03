@@ -15,70 +15,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:text="TEST"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:text="Menu pricipal"
+        android:textSize="40dp"
+        android:layout_marginTop="30dp"
         />
-
-    <EditText
-        android:id="@+id/edt_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:ems="10"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:hint="id"
-        android:textAlignment="center"
-        android:textColor="@color/black" />
-    <EditText
-        android:id="@+id/edt_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:hint="name"
-        android:textAlignment="center"
-        android:textColor="@color/black" />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:gravity="center">
-
-        <RadioButton
-            android:id="@+id/rb_ciudad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ciudad"
-            android:textColor="@color/black"/>
-
-        <RadioButton
-            android:id="@+id/rb_datos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Datos"
-            android:textColor="@color/black"/>
-    </RadioGroup>
 
     <Button
-        android:id="@+id/btn_guardar"
+        android:id="@+id/btn_ciudades"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="62dp"
         android:layout_gravity="center"
-        android:text="Guardar"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="100dp"
+        android:text="Ciudades"
+        android:textSize="20dp" />
 
-        />
+    <Button
+        android:id="@+id/btn_barrios"
+        android:layout_width="133dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Barrios"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_departamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Departamentos"
+        android:textSize="20dp" />
 
 
 
